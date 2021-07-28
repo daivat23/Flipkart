@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+    }
+    .container-fluid img{
+        margin: 15px;
+    }
+    .wrapper {
+    display: flex;
+    width: 100%;  
+    }
+    .content{
+        margin-top: 20px;
+        margin-left: -80px;
+    }
+/* #sidebar {
+   z-index: 0;
+    width: 250px;
+    position: fixed;
+    top: 20;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+} */
+div.wrapper {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  height: 1000vh;
+  
+}
+.head{
+  position: static;
+}
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+
+    </style>
+</head>
+<body>
+<div class="head">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <img src="img/flipkartimg.png" style="height: 20px; margin-right: 10px;">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </nav>
+    </div>
+
+    <!-- <div class="container-fluid"> -->
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="wrapper">
+                <!-- Sidebar -->
+                <div class="sidenav">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3 style="color: black;">Bootstrap Sidebar</h3><hr>
+                    </div>
+            
+                    <ul class="list-unstyled components">
+                        <h3 style="color: black; margin-left: -100px;">Filters</h3><hr>
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Home 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 3</a>
+                                </li>
+                            </ul>
+                        </li><hr>
+                        
+                    <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;"><hr>
+                    <h5 style="margin-left: -150px;">RAM</h5>
+                    <ul style="list-style-type: square;">
+                        <li>Less than 512 MB</li>
+                    </ul><hr>
+                    <h5 style="margin-left: -150px;">BRAND</h5>
+                    <ul style="list-style-type: square;">
+                        <li>Apple</li>
+                    </ul><hr>
+                    <h5 style="margin-left: -25px;">CUSTUM RATINGS</h5>
+                    <ul style="list-style-type: square;">
+                        <li>4* & above</li>
+                        <li>3* & above</li>
+                        <li>2* & above</li>
+                        <li>1* & above</li>
+                    </ul><hr>
+                    <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>BATTERY CAPACITY</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Less than 1000 mAh
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>OPREATIG SYSTEM</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                IOS
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>NETWORK TYPE</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>2G</li>
+                            <li>3G</li>
+                            <li>4G</li>
+                            <li>5G</li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>SCREEN SIZE</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                6 inch & above
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>SIM TYPE</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Dual sim
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>PRIMARY CAMERA</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                12 -12.9 MP
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>OFFERS</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Exchange Offer 
+                            </li>
+                            <li>Special Price</li>
+                            <li>Buy more</li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>PROCESSOR BRAND</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Apple
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>SPECIALLTY</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Selfie Camera
+                            </li>
+                        </ul><hr>
+                        <h5 <a href="#pageSubmenu"class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"></a>TYPE</h5>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BATTERY CAPACITY</a> -->
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                Smartphone
+                            </li>
+                        </ul><hr>
+                        <h5 style="margin-left: -25px;">DISCOUNT</h5>
+                        <ul style="list-style-type: square;">
+                            <li>10% or more</li>
+                            <li>20% or more</li>
+                            <li>30% or more</li>
+                            <li>40% or more</li>
+                        </ul><hr>
+                </nav>
+                <!-- Page Content --> 
+            </div>
+            </div>
+        </div>
+          <div class="col-sm-8" style="margin-top: 12px;">
+              <h3 style="margin-top: 50px; margin-left: -150px;">Apple Iphone 12<span style="font-size: 15px;">(Showing 1- 15 products of 15 products)</span></h3>
+              <hr>
+              <div class="content">
+                <div class="container-fluid">
+                    <div class="row" style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon1.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(Blue,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.49 cm(6.1 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 12MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>72000
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">14% off</h4>
+                        <h4 style="font-size: 12px;">upto 19200off on change</h4>
+                    </div>
+                      </div>
+                </div><hr>
+                <div class="container-fluid">
+                    <div class="row" style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon2.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(Black,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.50 cm(6.5 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 24MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>73500
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">18% off</h4>
+                        <h4 style="font-size: 12px;">upto 19500off on change</h4>
+                    </div>
+                      </div>
+                </div><hr>
+                <div class="container-fluid">
+                    <div class="row"style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon3.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(pink,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.49 cm(6.1 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 12MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>80000
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">15% off</h4>
+                        <h4 style="font-size: 12px;">upto 20000off on change</h4>
+                    </div>
+                      </div><hr>
+                </div>
+                <div class="container-fluid">
+                    <div class="row" style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon4.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(white,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.49 cm(6.1 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 12MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>85000
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">20% off</h4>
+                        <h4 style="font-size: 12px;">upto 25000off on change</h4>
+                    </div>
+                      </div>
+                </div><hr>
+                <div class="container-fluid">
+                    <div class="row" style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon5.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(red,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.49 cm(6.1 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 12MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>65000
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">14% off</h4>
+                        <h4 style="font-size: 12px;">upto 19200off on change</h4>
+                    </div>
+                      </div>
+                </div><hr>
+                <div class="container-fluid">
+                    <div class="row" style="margin-left: -100px;">
+                      <div class="col-sm-4">
+                        <img src="img/iphon6.jpeg"><br>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: -50px;">
+                          <h3>iphone 12(purple,128gb)</h3>
+                          <ul>
+                            <li>128 GB ROM</ll>
+                            <li>15.49 cm(6.1 inch)Super Retina XDR Display</li>
+                            <li>12MP + 12MP | 12MP Front Camera</li>
+                            <li>A14 Bionic Chip With Next Generation Neural Engine Processor</li>
+                            <li>All Screen OLED Display</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4" style="margin-left: 50px;">
+                        <h3>50000
+                            <img src="img/tag.png" style="width: 80px; height: 20px; display: inline;">
+                        </h3>
+                        <h4 style="color: green; font-size: 12px; margin-top: -12px;">14% off</h4>
+                        <h4 style="font-size: 12px;">upto 19500off on change</h4>
+                    </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      <!-- </div> -->
+        <!-- Indicators -->
+            </body>
+        </html>
